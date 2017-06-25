@@ -23,7 +23,19 @@ platforms:
 
 Workbooks are live documents that mix text, code and results in the same document.
 
-In order to reference dll’s, we can do that by referencing them locally. We will need the Sitecore.Kernel.dll. In order to make it work, you will need to setup/create a folder with the sitecore dll.
+Look at following code,  if you notice there is a “play icon” at the bottom after each “code window”. Hit play and the code will execute :-)
+
+```csharp
+string test = "<h1>Let's do some Xamarin Workbooks</h1>";
+```
+
+Now we will add the *AsHtml()*
+
+```csharp
+test.AsHtml();
+```
+
+Next we will reference an external dll, we can do that by referencing them locally. We will need the Sitecore.Kernel.dll. In order to make it work, you will need to setup/create a folder with the sitecore dll.
 
 ```csharp
 #r "C:\Habitat\dlls\Sitecore.Kernel.dll"
