@@ -6,18 +6,8 @@ packages:
   version: 1.8.1.2
 - id: Microsoft.Net.Http
   version: 2.2.29
-- id: Glass.Mapper
-  version: 3.0.15.32
-- id: Glass.Mapper.Sc.Core
-  version: 4.3.4.197
-- id: Glass
-  version: 1.6.0.113
-- id: Castle.Core
-  version: 4.1.0
 - id: Sitecore.MobileSDK.Xamarin
   version: 1.3.0
-- id: NUnit
-  version: 3.7.1
 - id: Microsoft.Bcl.Async
   version: 1.0.168
 - id: NSubstitute
@@ -45,7 +35,7 @@ Or we can reference nuget packages. Let’s grab the NSubstitute package.
 #r "NSubstitute"
 ```
 
-Ok, time for some sitecore coding. How about we create an Item. If you notice there is a “play icon” at the bottom after each “code window”. Hit play and the code will execute :-)
+Ok, time for some Sitecore coding. How about we create an Item. If you notice there is a “play icon” at the bottom after each “code window”. Hit play and the code will execute :-)
 
 ```csharp
 using NSubstitute;
@@ -90,11 +80,12 @@ Lets start by adding the nuget package, Sitecore.MobileSDK.
 
 ```csharp
 #r "Sitecore.MobileSDK"
+#r "Sitecore.MobileSDK.PasswordProvider.Interface"
 ```
 
 Cool, ok guys. :-) Now we have the package, time to do some coding.
 
-How about grab some code from method *TestParseCorrectData in AuthenticateResponseParserTest* at <https://github.com/Sitecore/sitecore-xamarin-pcl-sdk/blob/master/test/Portable/MobileSDK-UnitTest/AuthenticateParserTest.cs>
+How about grab some code from method *TestParseCorrectData *in* AuthenticateResponseParserTest* at <https://github.com/Sitecore/sitecore-xamarin-pcl-sdk/blob/master/test/Portable/MobileSDK-UnitTest/AuthenticateParserTest.cs>
 
 To make it easier we will remove the NUnit stuff. Check out the code below, press play and see the result.
 
