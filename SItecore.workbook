@@ -63,7 +63,7 @@ Or we can reference nuget packages. Let’s grab the NSubstitute package.
 #r "NSubstitute"
 ```
 
-Ok, time for some Sitecore coding. How about we create an Item. If you notice there is a “play icon” at the bottom after each “code window”. Hit play and the code will execute :-)
+Ok, time for some Sitecore coding. How about we create an Item :-)
 
 ```csharp
 using NSubstitute;
